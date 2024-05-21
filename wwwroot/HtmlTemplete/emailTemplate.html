@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div style='font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; text-align: center;'>
+
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; margin-top: 20px; text-align: center; border-bottom: 1px solid #e0e0e0; border-radius: 8px'>
+            <h2 style='font-size: 24px; color: #333333;'>Best {recipientName}</h2>
+            <p style='font-size: 16px; color: #777777;'>Bij deze ontvangt u de bevestiging van uw bestelling.</p>
+        </div>
+
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; margin-top: 20px; text-align: center; border-bottom: 1px solid #e0e0e0;'>
+            <h2>Bestelgegevens</h2>
+            <p>Bestellingsnummer: {OrderNummer}</p>
+            <p>Besteldatum:  {OrderDate}</p>
+        </div>
+
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; display: flex; justify-content: space-between;'>
+
+            <div style='width: 48%; text-align: left;'>
+                <h3>Onze gegevens</h3>
+                <div>
+                    <div>Sofani Market</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>Nieuwe Plein 32</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>6811 KR Arnhem</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>0639173620</div>
+                </div>
+            </div>
+
+
+            <div style='width: 48%; text-align: right;'>
+                <h3>Uw gegevens</h3>
+                <div>
+                    <div>{recipientName}</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>{line1}</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>{postalCode} {city}</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>0620304050</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; border-top: 1px solid #e0e0e0;'>
+            <h3>Bestelde artikelen</h3>
+            <table style='width: 100%; border-collapse: collapse;'>
+                <thead>
+                    <tr>
+                        <th style='border-bottom: 2px solid #e0e0e0; text-align: left; padding: 8px;'>Foto</th>
+                        <th style='border-bottom: 2px solid #e0e0e0; text-align: left; padding: 8px;'>Product</th>
+                        <th style='border-bottom: 2px solid #e0e0e0; text-align: left; padding: 8px;'>Hoeveelheid</th>
+                        <th style='border-bottom: 2px solid #e0e0e0; text-align: left; padding: 8px;'>Prijs</th>
+                        <th style='border-bottom: 2px solid #e0e0e0; text-align: left; padding: 8px;'>Totaal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {orderItemsHtml}
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; display: flex; justify-content: space-between;'>
+
+
+            <div style='width: 48%; text-align: left;'>
+
+                <div>
+                    <div>Verzendkosten</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <h3>Totaal</h3>
+                </div>
+
+                <div style='margin-top: 10px;'>
+                    <div>Betaald middels <span style='font-size: 20px;'>{paymentMethodType}</span></div>
+                </div>
+            </div>
+
+
+            <div style='width: 48%; text-align: right;'>
+
+                <div>
+                    <div>€6,95</div>
+                </div>
+                <div style='margin-top: 10px;'>
+                    <div>€{formattedAmountTotal}</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div style='background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; margin-top: 5px; text-align: center; border-bottom: 1px solid #e0e0e0; border-radius: 8px'>
+            <h2 style='font-size: 24px;'>Goed nieuws:</h2>
+            <p style='font-size: 16px; '>Zodra uw pakket is overgedragen aan PostNL, ontvangt u binnen één werkdag een aparte e-mail met de PostNL-trackingscode. Met deze barcode kunt u gemakkelijk uw bestelling volgen en de verwachte leverdatum bekijken.</p>
+        </div>
+
+        <div style='background-color: #000000; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: 0 auto; margin-top: 20px; text-align: center; border-bottom: 1px solid #e0e0e0; border-radius: 8px'>
+            <h2 style='font-size: 24px; color:  white;'>Hulp nodig?</h2>
+            <p style='font-size: 16px; color:  white;'>Als u vragen heeft over uw bestelling, neem dan contact met ons op via sofanifilimon@gmail.com of bel ons op 0031639173620.</p>
+        </div>;
+    </div>
+</body>
+</html>

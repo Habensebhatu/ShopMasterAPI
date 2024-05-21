@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Registration Alert</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nieuwe Gebruikersregistratie</h1>
+        <p>Een nieuwe gebruiker heeft zich geregistreerd en wacht op goedkeuring. Gelieve de gebruikersgegevens te beoordelen in het administratiedashboard en de registratie goed te keuren of af te wijzen.</p>
+        <p><strong>Gebruikersgegevens:</strong></p>
+        <ul>
+            <li>Naam: {Name}</li>
+            <li>Email: {Email}</li>
+            <li>BedrijfsNaam: {BedrijfsNaam}</li>
+            <li>KvkNummer: {KvkNummer}</li>
+        </ul>
+        <div class="footer">
+            Dit is een automatisch bericht. Gelieve niet rechtstreeks te reageren op deze e-mail.
+        </div>
+    </div>
+</body>
+</html>
